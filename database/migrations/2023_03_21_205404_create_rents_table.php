@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('rents', function (Blueprint $table) {
             $table->id();
-            $table->datetimes('start_date');
-            $table->datetimes('end_date');
+            $table->dateTime('start_date');
+            $table->dateTime('end_date');
             $table->decimal('total_cost');
             $table->enum('payement_status', ['payé', 'en attente', 'annulé']);
             $table->enum('payement_method', ['paypal', 'visa', 'mastercard']);

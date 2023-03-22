@@ -16,6 +16,7 @@ class Car extends Model
         'fuel_type',
         'transmission_type',
         'daily_rate',
+        'image_url',
         'available'
     ];
 }

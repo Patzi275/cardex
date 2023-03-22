@@ -22,6 +22,7 @@ return new class extends Migration
             $table->enum('transmission_type', ['Automatique', 'Manuel']);
             $table->decimal('daily_rate');
             $table->boolean('available')->default(false);
+            $table->string('image_url');
             $table->timestamps();
         });
     }
