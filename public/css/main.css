@@ -4857,8 +4857,8 @@ body::-webkit-scrollbar-thumb {
     margin-top: 70px;
     padding: 30px 20px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
   }

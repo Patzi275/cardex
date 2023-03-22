@@ -1,81 +1,15 @@
 <!-- footer -->
 <footer class="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-6 col-lg-6 col-xl-4 order-4 order-md-1 order-lg-4 order-xl-1">
-        <div class="footer__logo">
-          <img src="img/logo.svg" alt="">
-        </div>
-        <p class="footer__tagline">Search for cheap rental cars in New York. <br>With a diverse fleet of 19,000 vehicles, Waydex <br>offers its consumers an attractive and fun selection.</p>
-
-        <div class="footer__lang">
-          <a class="footer__lang-btn" href="#" role="button" id="dropdownLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <img src="img/flags/uk.svg" alt="">
-            <span>English</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M17,9.17a1,1,0,0,0-1.41,0L12,12.71,8.46,9.17a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l4.24,4.24a1,1,0,0,0,1.42,0L17,10.59A1,1,0,0,0,17,9.17Z" />
-            </svg>
-          </a>
-
-          <ul class="dropdown-menu footer__lang-dropdown" aria-labelledby="dropdownLang">
-            <li><a href="#"><img src="img/flags/spain.svg" alt=""><span>Spanish</span></a></li>
-            <li><a href="#"><img src="img/flags/france.svg" alt=""><span>French</span></a></li>
-            <li><a href="#"><img src="img/flags/china.svg" alt=""><span>Chinese</span></a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-1 order-md-2 order-lg-2 order-xl-3 offset-md-2 offset-lg-0">
-        <h6 class="footer__title">Company</h6>
-        <div class="footer__nav">
-          <a href="about.html">About us</a>
-          <a href="pricing.html">Pricing plans</a>
-          <a href="blog.html">Our blog</a>
-          <a href="contacts.html">Contacts</a>
-        </div>
-      </div>
-
-      <div class="col-12 col-md-8 col-lg-6 col-xl-4 order-3 order-md-3 order-lg-1 order-xl-2">
-        <div class="row">
-          <div class="col-12">
-            <h6 class="footer__title">Neighborhoods in New York</h6>
-          </div>
-
-          <div class="col-6">
-            <div class="footer__nav">
-              <a href="cars.html">Manhattan</a>
-              <a href="cars.html">Central New York City</a>
-              <a href="cars.html">Upper East Side</a>
-              <a href="cars.html">Queens</a>
-            </div>
-          </div>
-
-          <div class="col-6">
-            <div class="footer__nav">
-              <a href="cars.html">Theater District</a>
-              <a href="cars.html">Midtown</a>
-              <a href="cars.html">SoHo</a>
-              <a href="cars.html">Chelsea</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2 order-2 order-md-4 order-lg-3 order-xl-4">
-        <h6 class="footer__title">Support</h6>
-        <div class="footer__nav">
-          <a href="faq.html">Help center</a>
-          <a href="contacts.html">Ask a question</a>
-          <a href="privacy.html">Privacy policy</a>
-          <a href="privacy.html">Terms & conditions</a>
-        </div>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col-12">
         <div class="footer__content">
-          <div class="footer__social">
+        <div class="footer__logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+          <!--
+            <div class="footer__social">
             <a href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z" />
               </svg></a>
@@ -100,8 +34,8 @@
                 <path d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4Zm-.41,2-5.88,5.88a1,1,0,0,1-1.42,0L5.41,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V7.41l5.88,5.88a3,3,0,0,0,4.24,0L20,7.41Z" />
               </svg></a>
           </div>
-
-          <small class="footer__copyright">© Waydex, 2022. Created by <a href="https://themeforest.net/user/dmitryvolkov/portfolio" target="_blank">Dmitry Volkov</a>.</small>
+          -->
+          <small class="footer__copyright">© Cardex, 2023</small>
         </div>
       </div>
     </div>
