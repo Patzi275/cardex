@@ -59,7 +59,7 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if(!Auth::validate($credentials)):
-            return redirect()->to('login')
+            return redirect()->to('connexion')
                 ->withErrors(trans('auth.failed'));
         endif;
 
@@ -78,7 +78,7 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-        return redirect('login');
+        return redirect('connexion');
     }
 
     /**

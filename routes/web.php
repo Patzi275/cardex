@@ -16,20 +16,35 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function() {
     Route::view('/', 'index')->name('home.index');
-
+    
     Route::group(['middleware' => ['guest']], function() {
         // Register routes
-        Route::get('/register', 'AuthController@show_register')->name('register.show');
-        Route::post('/register', 'AuthController@register')->name('register.perform');
+        Route::get('/inscription', 'AuthController@show_register')->name('register.show');
+        Route::post('/inscription', 'AuthController@register')->name('register.perform');
 
         // Login routes
-        Route::get('/login', 'AuthController@show_login')->name('login.show');
-        Route::post('/login', 'AuthController@login')->name('login.perform');
+        Route::get('/connexion', 'AuthController@show_login')->name('login.show');
+        Route::post('/connexion', 'AuthController@login')->name('login.perform');
+
+        // Users routes
+        Route::get('/profil', 'UserController@show')->name('user.show');
+
+        // Rent routes
+        Route::get('/historique', 'RentController@index')->name('rent.index');
+
+        // Car(s) routes
+        Route::get('/voitures', 'CarController@index')->name('car.index');
+        
+        // About route
+        Route::view('/a-propos', 'apropos')->name('about.show');
+
+        // Contact route
+        Route::view('/contacts', 'contacts')->name('contacts.show');
     });
 
     Route::group(['middleware' => ['auth']], function() {
 
         // Logout routes
-        Route::get('/logout', 'AuthController@logout')->name('logout.perform');
+        Route::get('/deconnexion', 'AuthController@logout')->name('logout.perform');
     });
 });
