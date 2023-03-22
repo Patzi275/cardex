@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('model');
             $table->string('brand');
+            $table->integer('make_year');
             $table->integer('passenger_capacity', unsigned: true);
             $table->decimal('kilometers_per_liter', unsigned: true);
             $table->enum('fuel_type', ['diesel', 'hybride', 'essence', 'électrique']);
