@@ -21,7 +21,7 @@
                     <input type="email" name="email" class="sign__input" placeholder="Email">
                 </div>
 
-                @if (isset ($errors) && !$errors->has('email'))
+                @if (isset ($errors) && count($errors) > 0 && !$errors->has('email'))
                     <span class="text-danger text-center">{{ "Mot de passe invalide" }}</span>
                 @endif
                 <div class="sign__group">

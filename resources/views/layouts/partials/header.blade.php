@@ -13,7 +13,7 @@
           <div class="header__menu">
             <ul class="header__nav">
               <li class="header__nav-item">
-                <a href="#" class="header__nav-link">Accueil</a>
+                <a href="{{ route('home.index') }}" class="header__nav-link">Accueil</a>
               </li>
               <li class="header__nav-item">
                 <a href="{{ route('car.index') }}" class="header__nav-link">Voitures</a>
@@ -24,21 +24,6 @@
               <li class="header__nav-item">
                 <a href="{{ route('contacts.show') }}" class="header__nav-link">Contacts</a>
               </li>
-              <!--
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-link--menu" href="#" role="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12,10a2,2,0,1,0,2,2A2,2,0,0,0,12,10ZM5,10a2,2,0,1,0,2,2A2,2,0,0,0,5,10Zm14,0a2,2,0,1,0,2,2A2,2,0,0,0,19,10Z" />
-                  </svg></a>
-
-                <ul class="dropdown-menu header__nav-menu" aria-labelledby="dropdownMenu2">
-                  <li><a href="signin.html">Sign in</a></li>
-                  <li><a href="signup.html">Sign up</a></li>
-                  <li><a href="forgot.html">Forgot password</a></li>
-                  <li><a href="404.html">404 Page</a></li>
-                  <li><a href="privacy.html">Privacy policy</a></li>
-                </ul>
-              </li>
-              -->
             </ul>
           </div>
 

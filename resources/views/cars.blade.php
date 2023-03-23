@@ -3,5 +3,5 @@
 @section('title', 'Voitures')
 
 @section('main')
-    Les voitures
+    <h1>Les voitures</h1>
 @endsection
