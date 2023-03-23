@@ -48,7 +48,7 @@
       <div class="main__title main__title--first">
         <h2>Nos voitures</h2>
 
-        <a href="cars.html" class="main__link">Voir plus<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <a href="{{ route('car.index') }}" class="main__link">Voir plus<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M17.92,11.62a1,1,0,0,0-.21-.33l-5-5a1,1,0,0,0-1.42,1.42L14.59,11H7a1,1,0,0,0,0,2h7.59l-3.3,3.29a1,1,0,0,0,0,1.42,1,1,0,0,0,1.42,0l5-5a1,1,0,0,0,.21-.33A1,1,0,0,0,17.92,11.62Z" />
           </svg></a>
       </div>
@@ -483,7 +483,12 @@
           </svg>
         </span>
         <h3 class="step1__title">Créez un profil</h3>
-        <p class="step1__text">Pour faire une location, vous devez créer un compte<br><a href="signup.html">Commencer</a></p>
+        @auth
+          <p class="step1__text">Vous avez un compte ? Parfait, visitez notre parking<br><a href="{{ route('car.index') }}">Voitures</a></p>
+        @endauth
+        @guest
+          <p class="step1__text">Pour faire une location, vous devez créer un compte<br><a href="{{ route('register.show') }}">Commencer</a></p>
+        @endguest
       </div>
     </div>
 

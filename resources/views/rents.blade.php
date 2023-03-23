@@ -1,6 +1,6 @@
 @extends('layouts.master')
 
-@section('title', 'Profil')
+@section('title', 'Historique')
 
 @section('main')
 
@@ -10,7 +10,7 @@
     <div class="col-12">
       <ul class="breadcrumb">
         <li class="breadcrumb__item"><a href="{{ route('home.index') }}">Accueil</a></li>
-        <li class="breadcrumb__item breadcrumb__item--active">Mon compte</li>
+        <li class="breadcrumb__item breadcrumb__item--active">Historique</li>
       </ul>
     </div>
     <!-- end breadcrumb -->
@@ -18,7 +18,7 @@
     <!-- title -->
     <div class="col-12">
       <div class="main__title main__title--page">
-        <h1>Mon compte</h1>
+        <h1>Historique</h1>
       </div>
     </div>
     <!-- end title -->
@@ -38,12 +38,12 @@
                     <table class="cart__table">
                       <thead>
                         <tr>
-                          <th>Car</th>
+                          <th>Voitures</th>
                           <th></th>
-                          <th>Year</th>
+                          <th>Années</th>
                           <th>Transmission</th>
-                          <th>Fuel type</th>
-                          <th>Price</th>
+                          <th>Type de carburant</th>
+                          <th>Prix</th>
                           <th></th>
                         </tr>
                       </thead>
@@ -122,7 +122,7 @@
           <div class="row row--grid">
             <div class="col-12">
               <div class="paginator">
-                <span class="paginator__pages">4 from 38</span>
+                <span class="paginator__pages">4 sur 38</span>
 
                 <ul class="paginator__list">
                   <li>
