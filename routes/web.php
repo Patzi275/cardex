@@ -29,6 +29,9 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
     // Contact route
     Route::view('/contacts', 'contacts')->name('contacts.show');
 
+    // Users routes
+    Route::get('/profil', 'UserController@show')->name('user.show');
+    
     
     Route::group(['middleware' => ['guest']], function() {
         // Register routes
@@ -39,8 +42,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function() {
         Route::get('/connexion', 'AuthController@show_login')->name('login.show')->name('login');
         Route::post('/connexion', 'AuthController@login')->name('login.perform');
 
-        // Users routes
-        Route::get('/profil', 'UserController@show')->name('user.show');
     });
 
     Route::group(['middleware' => ['auth']], function() {
