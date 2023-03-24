@@ -10,7 +10,7 @@
         <div class="sign__content">
             <form action="{{ route('register.perform') }}" method="POST" class="sign__form">
                 @csrf
-                <a href="index.html" class="sign__logo">
+                <a href="{{ route('home.index') }}" class="sign__logo">
                     <img src="img/logo.svg" alt="">
                 </a>
 

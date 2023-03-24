@@ -52,7 +52,7 @@
                         <tr>
                           <td>
                             <div class="cart__img">
-                              <img src="img/cars/1-1.jpg" alt="">
+                              <img src="{{ asset("img/cars/1-1.jpg") }}" alt="">
                             </div>
                           </td>
                           <td><a href="car.html">Toyota RAV4</a></td>
@@ -67,7 +67,7 @@
                         <tr>
                           <td>
                             <div class="cart__img">
-                              <img src="img/cars/2-1.jpg" alt="">
+                              <img src="{{ asset("img/cars/2-1.jpg") }}" alt="">
                             </div>
                           </td>
                           <td><a href="car.html">BMW 3 Series</a></td>
@@ -82,7 +82,7 @@
                         <tr>
                           <td>
                             <div class="cart__img">
-                              <img src="img/cars/3-1.jpg" alt="">
+                              <img src="{{ asset("img/cars/3-1.jpg") }}" alt="">
                             </div>
                           </td>
                           <td><a href="car.html">Volkswagen T-Cross</a></td>
@@ -97,7 +97,7 @@
                         <tr>
                           <td>
                             <div class="cart__img">
-                              <img src="img/cars/4-1.jpg" alt="">
+                              <img src="{{ asset("img/cars/4-1.jpg") }}" alt="">
                             </div>
                           </td>
                           <td><a href="car.html">Cadillac Escalade</a></td>

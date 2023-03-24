@@ -19,4 +19,9 @@ class Car extends Model
         'image_url',
         'available'
     ];
+
+    public function secondaryImages()
+    {
+        return $this->hasMany(Image::class);
+    }
 }

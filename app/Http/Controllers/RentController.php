@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RentController extends Controller
 {
@@ -11,7 +12,11 @@ class RentController extends Controller
      */
     public function index()
     {
-        return view('rents');
+        if (Auth::guard('admin')->check()) {
+            return view('admin.rents');
+        } else {
+            return view('rents');
+        }
     }
 
     /**

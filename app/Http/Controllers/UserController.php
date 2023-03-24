@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class UserController extends Controller
 {
@@ -11,7 +13,13 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::latest()->paginate(20);
+
+        if (Auth::guard('admin')->check()) {
+            return view('admin.users')->with(compact('users'));
+        } else {
+            return redirect()->back();
+        }
     }
 
     /**
@@ -35,7 +43,13 @@ class UserController extends Controller
      */
     public function show(string $id = "")
     {
-        return view('profile');
+        $user = User::find($id);
+        
+        if (Auth::guard('admin')->check()) {
+            return view('admin.user-details')->with(compact('user'));
+        } else {
+            return view('profile');
+        }
     }
 
     /**
@@ -43,7 +57,13 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $user = User::find($id);
+        
+        if (Auth::guard('admin')->check()) {
+            return view('admin.user-edit')->with(compact('user'));
+        } else {
+            return view('profile');
+        }
     }
 
     /**

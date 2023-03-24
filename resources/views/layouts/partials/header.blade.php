@@ -6,7 +6,7 @@
         <div class="header__content">
           <div class="header__logo">
             <a href="index.html">
-              <img src="img/logo.svg" alt="">
+              <img src="{{ asset('img/logo.svg') }}" alt="">
             </a>
           </div>
 

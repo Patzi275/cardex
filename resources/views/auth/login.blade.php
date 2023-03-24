@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Connextion')
+@section('title', 'Connexion')
 
 @section('body')
 <!-- main content -->
@@ -10,8 +10,8 @@
         <div class="sign__content">
             <form action="{{ route('login.perform') }}" method="POST" class="sign__form">
                 @csrf
-                <a href="index.html" class="sign__logo">
-                    <img src="img/logo.svg" alt="">
+                <a href="{{ route('home.index') }}" class="sign__logo">
+                    <img src="{{ asset('img/logo.svg') }}" alt="">
                 </a>
 
                 @if ($errors->has('email'))

@@ -71,13 +71,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/1-1.jpg" alt="">
+                <img src="{{ asset("img/cars/1-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/1-2.jpg" alt="">
+                <img src="{{ asset("img/cars/1-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/1-3.jpg" alt="">
+                <img src="{{ asset("img/cars/1-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
@@ -139,13 +139,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/2-1.jpg" alt="">
+                <img src="{{ asset("img/cars/2-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/2-2.jpg" alt="">
+                <img src="{{ asset("img/cars/2-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/2-3.jpg" alt="">
+                <img src="{{ asset("img/cars/2-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
@@ -207,13 +207,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/3-1.jpg" alt="">
+                <img src="{{ asset("img/cars/3-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/3-2.jpg" alt="">
+                <img src="{{ asset("img/cars/3-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/3-3.jpg" alt="">
+                <img src="{{ asset("img/cars/3-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
@@ -275,13 +275,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/4-1.jpg" alt="">
+                <img src="{{ asset("img/cars/4-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/4-2.jpg" alt="">
+                <img src="{{ asset("img/cars/4-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/4-3.jpg" alt="">
+                <img src="{{ asset("img/cars/4-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
@@ -343,13 +343,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/5-1.jpg" alt="">
+                <img src="{{ asset("img/cars/5-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/5-2.jpg" alt="">
+                <img src="{{ asset("img/cars/5-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/5-3.jpg" alt="">
+                <img src="{{ asset("img/cars/5-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
@@ -411,13 +411,13 @@
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="img/cars/6-1.jpg" alt="">
+                <img src="{{ asset("img/cars/6-1.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/6-2.jpg" alt="">
+                <img src="{{ asset("img/cars/6-2.jpg") }}" alt="">
               </li>
               <li class="splide__slide">
-                <img src="img/cars/6-3.jpg" alt="">
+                <img src="{{ asset("img/cars/6-3.jpg") }}" alt="">
               </li>
             </ul>
           </div>
