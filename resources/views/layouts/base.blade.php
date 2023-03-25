@@ -17,13 +17,14 @@
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="icon/favicon-32x32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="icon/favicon-32x32.png">
-  <title>Waydex – @yield('title')</title>
+  <title>Cardex – @yield('title')</title>
 
 </head>
 <body>
   @yield('body')
 
   <!-- JS -->
+  @yield('script')
   <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
   <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
   <script src="{{ asset('js/splide.min.js') }}"></script>

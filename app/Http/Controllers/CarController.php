@@ -14,15 +14,64 @@ class CarController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $cars = Car::latest()->paginate(20);
+        $cars_latest = Car::latest();
 
+        // A modifier
         if (Auth::guard('admin')->check()) {
+            $cars = $cars_latest->paginate(20);
             return view('admin.cars', compact('cars'));
-        } else {
-            return view('cars');
         }
+
+        $carsQuery = Car::query();
+
+        // Filtre par modèle
+        if ($request->has('model')) {
+            $model = $request->input('model');
+            $carsQuery->where('model', 'like', "%$model%");
+        }
+
+        // Filtre par prix journalier max
+        if ($request->has('max_daily_rate')) {
+            $maxDailyRate = $request->input('max_daily_rate');
+            $carsQuery->where('daily_rate', '<=', $maxDailyRate);
+        }
+
+        // Filtre par année de fabrication
+        if ($request->has('make_year')) {
+            $makeYear = $request->input('make_year');
+            $carsQuery->where('make_year', $makeYear);
+        }
+
+        if ($request->has('make_tmp')) {
+            $makeTmp = $request->input('make_tmp');
+            if ($makeTmp == 'nouveau') {
+                $carsQuery->where('make_year', '>=', date('Y') - 2);
+            } elseif ($makeTmp == 'ancien') {
+                $carsQuery->where('make_year', '<', date('Y') - 2);
+            } 
+        }
+
+        // Filtre par marque
+        if ($request->has('brand')) {
+            $brand = $request->input('brand');
+            if ($brand != 'tout') {
+                $carsQuery->where('brand', 'like', "%$brand%");
+            }
+        }
+
+        // Tri par date de création (plus récent d'abord)
+        if ($request->has('sort') && $request->input('sort') === 'recent') {
+            $carsQuery->orderByDesc('created_at');
+        }
+
+        // Limite le nombre de résultats
+        $limit = $request->has('limit') ? $request->input('limit') : 9;
+
+        $cars = $carsQuery->paginate($limit);
+
+        return view('cars', compact('cars'));
     }
 
     /**
@@ -87,7 +136,7 @@ class CarController extends Controller
         if (Auth::guard('admin')->check()) {
             return view('admin.car-details', compact('car'));
         } else {
-            return view('cars');
+            return view('car-details', compact('car'));
         }
     }
 

@@ -2618,7 +2618,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   border-bottom: 1px solid rgba(138,148,166,0.22);
   padding-bottom: 10px;

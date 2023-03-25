@@ -6,7 +6,7 @@
       <div class="col-12">
         <div class="footer__content">
         <div class="footer__logo">
-          <img src="img/logo.svg" alt="">
+          <img src="{{ asset('img/logo.svg') }}" alt="">
         </div>
           <!--
             <div class="footer__social">
