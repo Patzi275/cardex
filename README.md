@@ -43,4 +43,3 @@ Cardex is released under the [MIT License](LICENSE). You are free to use, modify
 ## Acknowledgments
 
 We would like to extend our gratitude to the Laravel and Bootstrap communities for their fantastic frameworks that made developing Cardex a delightful experience.
-
