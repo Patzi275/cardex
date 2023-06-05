@@ -2,6 +2,11 @@
 
 Cardex is a comprehensive car rental platform designed to simplify the process of renting cars. This repository contains the code for the website and administration panel built using Laravel and Bootstrap respectively.
 
+## Screenshots
+![Cardex1](./imgs/cardex1.png)
+![Cardex2](./imgs/cardex2.png)
+![Cardex3](./imgs/cardex3.png)
+
 ## Features
 
 ### User-Facing Website
