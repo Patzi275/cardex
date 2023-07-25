@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Not included
+
+Route::get('/tasks', [TaskController::class, 'index']);
+
+// Included
+
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/', 'PageController@home')->name('home.index');
 
