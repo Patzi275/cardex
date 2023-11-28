@@ -1,4 +1,4 @@
-# Cardex - Car Rental Platform
+# Car Rental Platform
 
 Cardex is a comprehensive car rental platform designed to simplify the process of renting cars. This repository contains the code for the website and administration panel built using Laravel and Bootstrap respectively.
 
