@@ -37,10 +37,6 @@ To set up and run Cardex on your local machine, follow these steps:
 9. Start the development server using `php artisan serve`.
 10. Access the Cardex website and administration panel by visiting `http://localhost:8000` and `http://localhost:8000/admin` respectively.
 
-## Contributing
-
-Contributions to Cardex are welcome! If you have suggestions for new features, improvements, or bug fixes, please open a pull request. Ensure that your code adheres to the project's coding standards and follows good software development practices.
-
 ## License
 
 Cardex is released under the [MIT License](LICENSE). You are free to use, modify, and distribute this project for personal or commercial purposes.
